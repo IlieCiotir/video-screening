@@ -1,0 +1,48 @@
+body {}
+
+body > .videos {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+body > .videos > .video-holder {
+    height: 50%;
+    width: 50%;
+}
+
+body > .videos > .video-holder > video {
+    height: 100%;
+    width: 100%;
+    opacity: 0.1;
+}
+
+body > .videos > .video-holder:hover > video {
+    opacity: 1;
+}
+
+body > .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+}
+
+body > .overlay > img {
+    width: 100%;
+    height: 100%;
+}
+
+body > form {
+    z-index: 2000;
+    position: fixed;
+}
