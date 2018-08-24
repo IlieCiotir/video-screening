@@ -8,8 +8,8 @@ function createFromConfig() {
 function createVideoElements(videos) {
     var holder = document.getElementById('holder');
     if (holder) {
-        for (var i = 0; i < videos.files.length; i++) {
-            var source = videos.files.item(i);
+        for (var i = 0; i < 4; i++) {
+            var source = videos.files.item(i % videos.files.length);
             var video = document.createElement('video');
             video.src = window.URL.createObjectURL(source);
             video.autoplay = true;
